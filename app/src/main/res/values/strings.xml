@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Frogs Kitchen Auto AI</string>
+    <string name="accessibility_service_description">Tự động chơi game Frogs Kitchen (com.outloud.idlefrog) 100% bằng AI Gemini: tự mở trạm nấu ăn, nâng cấp level, thuê đầu bếp ếch và qua màn mới.</string>
+    <string name="status_service_off">Dịch vụ trợ năng: CHƯA BẬT ❌</string>
+    <string name="status_service_on">Dịch vụ trợ năng: ĐANG BẬT ✅</string>
+    <string name="select_apps_title">Chọn game / ứng dụng chạy Auto</string>
+</resources>

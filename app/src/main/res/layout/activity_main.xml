@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐸 Frogs Kitchen Auto AI 100%"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/status_service_off"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnOpenAccessibilitySettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Bật Dịch vụ Trợ năng (Accessibility)"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnLaunchGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2E7D32"
+            android:text="🐸 Mở ngay game Frogs Kitchen (com.outloud.idlefrog)"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSelectApps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn ứng dụng mục tiêu (Mặc định: Frogs Kitchen)"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chạy Auto trên mọi ứng dụng (Bỏ giới hạn package)"
+                android:textSize="15sp" />
+
+            <Switch
+                android:id="@+id/switchApplyAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mặc định app đã khóa mục tiêu vào game Frogs Kitchen (com.outloud.idlefrog). Bật nút trên nếu bạn muốn test trên màn hình bất kỳ."
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔑 Cấu hình Gemini AI (Não bộ tự chơi 100%)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etGeminiApiKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Gemini API Key từ Google AI Studio..."
+            android:inputType="textPassword"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSaveApiKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Lưu Gemini API Key"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kích hoạt AI Tự Chơi Frogs Kitchen 100%"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchAiDetection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khi bật: AI sẽ liên tục chụp màn hình game, phân tích mọi nút Start/Play, mở hộp trạm nấu ăn, giữ nút nâng cấp (HOLD), mua Upgrade đầu bếp, mở túi đồ, tắt quảng cáo và bấm sang màn/nhà hàng mới hoàn toàn tự động."
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnGrantScreenCapture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cấp quyền chụp màn hình (Dành cho Android dưới 11)"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvScreenCaptureHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu ý: Android 11+ tự động chụp qua Accessibility không cần nút này. Android 10 trở xuống cần cấp quyền MediaProjection."
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3. Hiển thị Bong bóng điều khiển (Bắt đầu / Tạm dừng)"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchBubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hướng dẫn: Bật bong bóng nổi -> Mở game Frogs Kitchen -> Ấn nút ▶ (Play) trên bong bóng để AI bắt đầu tự chơi từ A-Z!"
+            android:textSize="13sp"
+            android:textColor="#2E7D32" />
+
+    </LinearLayout>
+</ScrollView>
